@@ -8,7 +8,7 @@
     text-color="#fff"
     active-text-color="#ffd04b"
     router>
-    <img class="logo" :src="logoUrl" @click="$router.push('/homepage')"/>
+    <img class="logo" :src="logoUrl" @click="$router.push('/homepage')" />
     <el-menu-item index="/homepage">首页</el-menu-item>
     <el-menu-item index="/blog">博客</el-menu-item>
     <el-menu-item index="/library">藏书馆</el-menu-item>
@@ -25,6 +25,7 @@
       <el-button type="text" v-show="isLogin">退出</el-button>
     </div>
   </el-menu>
+
 </template>
 
 <script>
@@ -52,7 +53,7 @@ body {
 
 .logo {
   float: left;
-  margin: 14px 24px 0 70px;
+  margin: 10px 24px 0 70px;
   display: inline-block;
   height: 40px;
   cursor: pointer;
